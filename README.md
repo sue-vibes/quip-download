@@ -2,6 +2,48 @@
 
 A Python script to download all your Quip documents and convert them to Markdown or HTML format.
 
+## Getting Started
+
+If you've never used Git before, follow these simple steps:
+
+### Download the Repository
+
+1. Click the green **"Code"** button on the GitHub page
+2. Click **"Download ZIP"** 
+3. Extract the ZIP file to a folder on your computer
+4. Open Terminal (Mac/Linux) or Command Prompt (Windows)
+
+### Install and Run
+
+```bash
+# Navigate to the extracted folder
+cd path/to/quip-download
+
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+
+# Copy the example environment file
+cp .env.example .env  # On Windows: copy .env.example .env
+
+# Edit .env and add your Quip token (see below)
+```
+
+### Edit Your Quip Token
+
+Open `.env` in a text editor and replace `your_quip_personal_access_token_here` with your actual token.
+
+### Running the Script
+
+After saving `.env`, run:
+
+```bash
+python quip_download.py
+```
+
 ## Features
 
 - Downloads documents from your Quip desktop, private, archive, and shared folders
@@ -15,17 +57,7 @@ A Python script to download all your Quip documents and convert them to Markdown
 - `requests` library
 - `markdownify` library
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Setup
-
-1. Create a `.env` file (copy from `.env.example`)
-2. Get your Quip Personal Access Token from https://quip.com/dev/token
-3. Add your token to the `.env` file
+All dependencies are installed with the `pip install` command above.
 
 ## Usage
 
