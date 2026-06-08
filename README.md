@@ -20,11 +20,11 @@ If you've never used Git before, follow these simple steps:
 cd path/to/quip-download
 
 # Create a virtual environment (optional but recommended)
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install required packages
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # Copy the example environment file
 cp .env.example .env  # On Windows: copy .env.example .env
@@ -39,7 +39,7 @@ Open `.env` in a text editor and replace `your_quip_personal_access_token_here` 
 After saving `.env`, run the script:
 
 ```bash
-python quip_download.py
+python3 quip_download.py
 ```
 
 Documents will be saved to `./quip_all_exports` by default.
