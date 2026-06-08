@@ -28,21 +28,21 @@ pip install -r requirements.txt
 
 # Copy the example environment file
 cp .env.example .env  # On Windows: copy .env.example .env
-
-# Edit .env and add your Quip token (see below)
 ```
 
 ### Edit Your Quip Token
 
-Open `.env` in a text editor and replace `your_quip_personal_access_token_here` with your actual token.
+Open `.env` in a text editor and replace `your_quip_personal_access_token_here` with your actual token from https://quip.com/dev/token.
 
 ### Running the Script
 
-After saving `.env`, run:
+After saving `.env`, run the script:
 
 ```bash
 python quip_download.py
 ```
+
+Documents will be saved to `./quip_all_exports` by default.
 
 ## Features
 
@@ -58,14 +58,6 @@ python quip_download.py
 - `markdownify` library
 
 All dependencies are installed with the `pip install` command above.
-
-## Usage
-
-```bash
-python quip_download.py
-```
-
-Documents will be saved to `./quip_all_exports` by default.
 
 ## Configuration
 
