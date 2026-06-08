@@ -6,7 +6,7 @@ A Python script to download all your Quip documents and convert them to Markdown
 
 - Downloads documents from your Quip desktop, private, archive, and shared folders
 - Supports Markdown and HTML export formats
-- Sanitizes filenames to prevent OS compatibility issues
+- Sanitises filenames to prevent OS compatibility issues
 - Handles nested subfolders recursively
 
 ## Requirements

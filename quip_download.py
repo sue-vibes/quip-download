@@ -17,8 +17,8 @@ if not QUIP_TOKEN:
 
 HEADERS = {"Authorization": f"Bearer {QUIP_TOKEN}"}
 
-def sanitize_filename(name):
-    """Removes invalid Mac/Windows/Linux characters from document titles."""
+def sanitise_filename(name):
+    """Sanitises filenames to remove invalid Mac/Windows/Linux characters."""
     return re.sub(r'[\\/*?:"<>|]', "", name).strip() or "Untitled_Document"
 
 def get_all_root_folder_ids():
@@ -99,7 +99,7 @@ def crawl_and_download_everything():
 
                 thread_info = thread_data.get("thread", {})
                 title = thread_info.get("title", f"Document_{thread_id}")
-                clean_title = sanitize_filename(title)
+                clean_title = sanitise_filename(title)
                 
                 html_content = thread_data.get("html", "")
                 if not html_content:
