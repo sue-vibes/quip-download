@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Setup
 
 1. Create a `.env` file (copy from `.env.example`)
-2. Get your Quip Personal Access Token from https://quip.com/settings/access_tokens
+2. Get your Quip Personal Access Token from https://quip.com/dev/token
 3. Add your token to the `.env` file
 
 ## Usage
